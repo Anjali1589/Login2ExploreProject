@@ -23,4 +23,6 @@
 
 ![webpge](https://user-images.githubusercontent.com/45989920/107024678-59a76a80-67ce-11eb-968c-7863d1b8a73e.png)
 
+<p><strong>  This is the image of the Database of the LMS(Library Management System) </strong></p>
 
+![db](https://user-images.githubusercontent.com/45989920/107024801-7f347400-67ce-11eb-8ac4-18cc2d161dee.png)
