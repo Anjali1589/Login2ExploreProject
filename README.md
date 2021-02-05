@@ -4,12 +4,12 @@
 <p>Library Management System is a software that used to manages the catalog of a library.  
   This helps to keep the records of whole transactions of the books available in the library.<br>
   In this I have create four filed that store the appropriate values of the required field this include :
-  <br>
+  <br><br><br>
   1.Book Id :This field stores the required book id<br>
   2.Book Name:this is used to store the booke name<br>
   3.Book Category:This include the various type of book category/catolog such Fiction,Thriller etc<br>
   4.Book Author :This basically indicate the author of the book<br>
-  
+  <br><br>
 </p>
 <h3>Arrtibutes of Library Management System</h3>
 <h4>
@@ -20,6 +20,7 @@
   <li>Book Author</li> 
 </ul>
   </h4>
+  <br><br>
   
   <h3>Technical Stack</h3>
   <ul>
