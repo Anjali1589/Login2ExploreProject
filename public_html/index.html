@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Library Management System </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    </head>
+    <body>
+<div class="container">
+    
+<h2>Library Management System</h2>
+
+<form id="BookForm" method="post">
+    
+<div class="form-group">
+<span>
+    <label for="bookId">Book Id:</label> 
+</span>
+    
+<input type="text" class="form-control" name="bookId" id="bookId"
+placeholder="Enter Book ID" required>
+</div>
+    
+<div class="form-group">
+<label for="bookName">Book Name:</label>
+<input type="text" class="form-control" id="bookName"
+placeholder="Enter Book Name" name="bookName">
+</div>
+    
+    
+<div class="form-group">
+<label for="bookCategory">Book Category:</label>
+<select id="bookCategory" class="form-control" >
+    <option value="select">--Select--</option>
+  <option value="Literature & Fiction">Literature & Fiction</option>
+  <option value="Mystery">Mystery</option>
+  <option value="Thriller">Thriller</option>
+  <option value="Science & Math">Science & Math</option>
+  <option value="Biographies">Biographies</option>
+  <option value="Educational">Educational</option>
+  <option value="Contemporary">Contemporary</option>
+  <option value="Dystopian">Dystopian</option>
+</select>
+</div>
+    
+<div class="form-group">
+<label for="bookAuthor">Book Author:</label>
+<input type="text" class="form-control" id="bookAuthor"
+placeholder="Enter Book Author Name" name="bookAuthor">
+</div>
+ 
+
+
+<input type="button" class="btn btn-primary" id="BookSave" value="Save"
+onclick="SaveBook();">
+</form>
+</div>
+
+ <script>
+$("#bookId").focus();
+function validateAndGetFormData() 
+{
+var var1 = $("#bookId").val();
+if (var1 === "") 
+{
+alert("Book ID Required Value");
+$("#bookId").focus();
+return "";
+}
+var var2 = $("#bookName").val();
+if (var2 === "") 
+{
+alert("Book Name is Required Value");
+$("#bookName").focus();
+return "";
+}
+var var3 = $("#bookCategory option:selected").text();
+
+if (var3 == "--select--" ) 
+{
+alert("Select Book Cateory");
+$("#bookCategory").focus();
+return "";
+}
+if(var3 === "")
+{
+ alert("Select Book Cateory");
+$("#bookCategory").focus();
+return "";
+}
+var var4 = $("#bookAuthor").val();
+if ( var4 === "") 
+{
+alert("Book Author name is required");
+$("#bookAuthor").focus();
+return "";
+}
+
+var jsonStrObj = {
+    bookAuthor:var4,
+    bookCategory:var3,
+    bookId:var1,
+    bookName:var2
+       
+};
+return JSON.stringify(jsonStrObj);
+}
+
+function resetForm() 
+{
+$("#bookId").val("");
+$("#bookName").val("");
+$("#bookCategory").val();
+$("#bookAuthor").val("");
+$("#bookId").focus();
+}
+
+
+function SaveBook() 
+{
+var jsonStr = validateAndGetFormData();
+if (jsonStr === "") 
+{
+return;
+}
+var putReqStr = createPUTRequest("90937097|-31948800793600678|90931554", jsonStr, "LibraryMgt", "LibRel");
+alert(putReqStr);
+jQuery.ajaxSetup({async: false});
+var resultObj = executeCommandAtGivenBaseUrl(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
+alert(JSON.stringify(resultObj));
+jQuery.ajaxSetup({async: true});
+
+resetForm();
+}
+
+
+</script>
+    </body>
+</html>
