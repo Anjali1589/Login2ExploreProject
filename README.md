@@ -28,7 +28,11 @@
    1.Netbeans ---> HTML5 ---> HTML/JS APPLICATION.<br>
    After opening a new project in Netbeans HTML/JS Application <br>
    2.NetBeans Connector extension  : To use the Chrome browser for your application and install the NetBeans Connector extension from the Chrome Web Store.<br>
-  <li>JsonPowerDB: </li>
+  <li>JsonPowerDB: <p>JSON stands for JavaScript Object Notation. JSON is a lightweight format for storing and transporting data. JSON is often used when data is sent from a       server to a web page. JSON is "self-describing" and easy to understand. To store the database I have use the JSONPowerDB.</p></li>
+  <li>Talend API Tester : <p>Create and manage comprehensive API tests from development through deployment RapidAPI Testing is a functional API testing and monitoring solution that provides an intuitive UX, support for any API type, and integration with the RapidAPI Marketplace and Enterprise Hub. RapidAPI Testing enables users and enterprises to: <br>1. Ensure API Functionality – Easily create intricate functional tests for deep validation of APIs
+<br>2.Centralize Monitoring – Monitor and manage API tests across multiple geographies
+<br>3. Improve Efficiency – Integrate to the CI/CD pipeline, collaborate across teams, and natively integrate with the RapidAPI Marketplace and Enterprise Hub</p>
+  </li>
   </ul>
   
 
