@@ -1,1 +1,24 @@
-# Login2ExploreProject![webpge](https://user-images.githubusercontent.com/45989920/107023715-0680e800-67cd-11eb-8376-4e1d170b75e1.png)
+<h1>Library Management Syatem</h1>
+
+<p>Library Management System is a software that used to manages the catalog of a library.  
+  This helps to keep the records of whole transactions of the books available in the library.<br>
+  In this I have create four filed that store the appropriate values of the required field this include :
+  <br>
+  1.Book Id :This field stores the required book id<br>
+  2.Book Name:this is used to store the booke name<br>
+  3.Book Category:This include the various type of book category/catolog such Fiction,Thriller etc<br>
+  4.Book Author :This basically indicate the author of the book<br>
+  
+</p>
+<h4>
+  <ul>
+  <li>Book Id</li>
+  <li>Book Name</li>
+  <li>Book Category</li>
+  <li>Book Author</li> 
+</ul>
+  </h4>
+
+<p><strong>  This is the image of the Webpage of the LMS(Library Management System) attributes</strong></p>
+
+
