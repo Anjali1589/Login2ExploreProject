@@ -9,7 +9,7 @@
   2.Book Name:this is used to store the booke name<br>
   3.Book Category:This include the various type of book category/catolog such Fiction,Thriller etc<br>
   4.Book Author :This basically indicate the author of the book<br>
-  <br><br>
+  <br>
 </p>
 <h3>Arrtibutes of Library Management System</h3>
 <h4>
@@ -20,7 +20,7 @@
   <li>Book Author</li> 
 </ul>
   </h4>
-  <br><br>
+  <br>
   
   <h3>Technical Stack</h3>
   <ul>
