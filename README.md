@@ -36,7 +36,11 @@
 <br>3. Improve Efficiency – Integrate to the CI/CD pipeline, collaborate across teams, and natively integrate with the RapidAPI Marketplace and Enterprise Hub</p>
   </li>
   </ul>
-  
+ 
+ <h3>Language used for Coding</h3>
+ 1.HTML<br>
+ 2.JavaScript<br>
+ 3.JQuery<br>
 
 <p><strong>  This is the image of the Webpage of the LMS(Library Management System) attributes</strong></p>
 
